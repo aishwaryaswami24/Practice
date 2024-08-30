@@ -5,6 +5,7 @@ with sync_playwright() as p:
     page=context.new_page()
     page.goto('https://playwright.dev/')
     page.wait_for_timeout(2000)
+    page.screenshot(path='basic.png')
     page.close()
     page.video.save_as('basic1.mp4')
     context.close()
