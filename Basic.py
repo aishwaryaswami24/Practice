@@ -5,6 +5,7 @@ with sync_playwright() as p:
     page=context.new_page()
     page.goto('https://playwright.dev/')
     page.wait_for_timeout(2000)
+    page.get_by_text('Get started').click()
     page.set_viewport_size({'height': 800,'width': 200})
     page.screenshot(path='basic.png',full_page=True)
     page.close()
