@@ -24,3 +24,5 @@ with sync_playwright() as p:
         context.tracing.stop(path='trace.zip')
         context.close()
         browser.close()
+
+#playwright show-trace trace.zip
