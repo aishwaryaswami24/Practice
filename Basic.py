@@ -26,3 +26,5 @@ with sync_playwright() as p:
         browser.close()
 
 #playwright show-trace trace.zip
+
+print('this is print statiment')
