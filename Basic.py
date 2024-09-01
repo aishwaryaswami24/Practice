@@ -28,3 +28,5 @@ with sync_playwright() as p:
 #playwright show-trace trace.zip
 
 print('this is print statiment')
+
+multiply=lambda x,y: x*y
