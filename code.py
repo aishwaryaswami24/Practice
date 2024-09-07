@@ -4,6 +4,7 @@ with sync_playwright() as p:
     context=browser.new_context(record_video_dir='video1.mp4')
     page=context.new_page()
     page.goto('https://www.irctc.co.in/nget/train-search')
+    page.hover()
     page.wait_for_timeout(2000)
     #context.tracing.start(screenshots=True,snapshots=True,sources=True)
     # page.wait_for_selector('//i[@style="margin: 3px 0px 0px 8px;"]').hover()
@@ -18,6 +19,7 @@ with sync_playwright() as p:
     page.get_by_text("13").click()
     #page.video().save_as('video.mp4')
     print(page.title())
+
     context.close()
 
     browser.close()
