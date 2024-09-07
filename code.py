@@ -17,8 +17,10 @@ with sync_playwright() as p:
     #context.tracing.stop(path='trace.zip')
     page.get_by_role("textbox").click()
     page.get_by_text("13").click()
+    page.press('Enter')
     #page.video().save_as('video.mp4')
     print(page.title())
+
 
     context.close()
 
