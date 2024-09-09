@@ -14,3 +14,6 @@ dict4={'id2':2,'name2':'shubh'}
 
 dict3.update(dict4)
 print(dict3)
+
+dict5=dict3 | dict4
+print(dict5)
