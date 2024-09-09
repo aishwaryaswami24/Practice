@@ -9,5 +9,8 @@ dict3=dict1 | dict2
 print(dict3)
 
 
-dict3={'id': 1,'name':'aish'}
-dict4={'id':2,'name':'shubh'}
+dict3={'id1': 1,'name1':'aish'}
+dict4={'id2':2,'name2':'shubh'}
+
+dict3.update(dict4)
+print(dict3)
