@@ -7,3 +7,7 @@ print(dict1)
 
 dict3=dict1 | dict2
 print(dict3)
+
+
+dict3={'id': 1,'name':'aish'}
+dict4={'id':2,'name':'shubh'}
