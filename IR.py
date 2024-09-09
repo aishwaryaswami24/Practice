@@ -9,18 +9,23 @@ with sync_playwright() as p:
     page.wait_for_selector('//input[@aria-controls="pr_id_1_list"]').fill('PUNE JN - PUNE (PUNE)')
     page.wait_for_selector('//input[@aria-controls="pr_id_2_list"]').fill('MUMBAI CENTRAL - MMCT (MUMBAI)')
     page.get_by_role("textbox").fill("08-09-2024")
-    page.get_by_text("All Classes")
+    page.get_by_text("All Classes").click()
     page.get_by_text("Anubhuti Class (EA)")
-
-
-    # page.wait_for_selector('//span[contains(text(),"All Classes")]', state="visible")
-    # dropdown=page.locator('//span[contains(text(),"All Classes")]')
-    # dropdown.select_option('Anubhuti Class (EA)")')
-    #page.wait_for_selector('//span[contains(text(),"Anubhuti Class (EA)")]',state="visible")
-    #page.wait_for_selector('//span[contains(text(),"Anubhuti Class (EA)")')
-
-    page.wait_for_selector('//button[contains(text(),"Search")]').click()
+    page.get_by_role("button", name="Search").click()
     page.wait_for_timeout(5000)
-
     context.close()
     browser.close()
+#
+#
+#     # page.wait_for_selector('//span[contains(text(),"All Classes")]', state="visible")
+#     # dropdown=page.locator('//span[contains(text(),"All Classes")]')
+#     # dropdown.select_option('Anubhuti Class (EA)")')
+#     #page.wait_for_selector('//span[contains(text(),"Anubhuti Class (EA)")]',state="visible")
+#     #page.wait_for_selector('//span[contains(text(),"Anubhuti Class (EA)")')
+#
+#
+#
+#
+
+
+
