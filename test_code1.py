@@ -11,7 +11,7 @@ def test_web_table():
         table_name = page.locator('#customers tbody tr:nth-child(2) td').all_text_contents()
         # for i in table_name:
         #  print(i)
-        print("/n".join(table_name))
+        print("\n".join(table_name))
         page.wait_for_timeout(2000)
         browser.close()
 test_web_table()
