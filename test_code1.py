@@ -13,3 +13,4 @@ def test_web_table():
         # print(table_name)
         page.wait_for_timeout(2000)
         browser.close()
+test_web_table()
