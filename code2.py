@@ -42,3 +42,9 @@ s2='listen'
 print(sorted(s1))
 print(sorted(s2))
 print(sorted_anagrams(s1,s2))
+
+#is_digit
+def is_digit(s):
+    return s.isdigit()
+s='aish1234'
+print(is_digit(s))
