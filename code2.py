@@ -8,3 +8,8 @@ for i in lst:
     if i not in remove_dup:
         remove_dup.append(i)
 print(remove_dup)
+
+#using dict.fromkeys()
+lst=[0,9,8,7,3,8,9]
+unique_list=dict.fromkeys(lst)
+print(list(unique_list))
