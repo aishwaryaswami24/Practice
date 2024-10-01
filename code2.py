@@ -20,3 +20,8 @@ def reverse_word(s):
 s='hello world'
 print('reverse_word:',reverse_word(s))
 
+#palindrome
+def palindrome(s):
+    return s==s[::-1]
+s='madam'
+print(palindrome(s))
