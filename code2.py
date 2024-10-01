@@ -32,3 +32,13 @@ def vowels(s):
     return sum(1 for char in s if char in vowels)
 s='helloo world'
 print('count of vowels:',vowels(s))
+
+#anagrams
+def sorted_anagrams(s1,s2):
+    return sorted(s1)==sorted(s2)
+
+s1='silent'
+s2='listen'
+print(sorted(s1))
+print(sorted(s2))
+print(sorted_anagrams(s1,s2))
