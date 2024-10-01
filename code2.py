@@ -48,3 +48,9 @@ def is_digit(s):
     return s.isdigit()
 s='aish1234'
 print(is_digit(s))
+
+#remove string
+def remove_duplicates(s):
+    return ''.join(sorted(set(s)))
+s='abracadabra'
+print(remove_duplicates(s))
