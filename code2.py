@@ -57,9 +57,11 @@
 
 #even_odd
 lst=[1,2,3,4,5,5,9]
-even_count=0
+odd_count=0
 even_lst=[]
 for i in lst:
     if i%2==0:
         even_lst.append(i)
+    else:
+
 print(even_lst)
