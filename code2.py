@@ -54,3 +54,6 @@ def remove_duplicates(s):
     return ''.join(sorted(set(s)))
 s='abracadabra'
 print(remove_duplicates(s))
+
+#even_odd
+lst=[]1,2,3,4,5,5,9]
