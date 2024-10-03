@@ -66,3 +66,4 @@ for i in lst:
         odd_count -=1
 
 print(even_lst)
+print(odd_count)
