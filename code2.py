@@ -63,5 +63,6 @@ for i in lst:
     if i%2==0:
         even_lst.append(i)
     else:
+        odd_count -=1
 
 print(even_lst)
