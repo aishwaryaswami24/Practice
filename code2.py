@@ -59,3 +59,4 @@ print(remove_duplicates(s))
 lst=[1,2,3,4,5,5,9]
 
 even_lst=[]
+for i in lst:
